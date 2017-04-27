@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+   <!-- http://solucaorevistadigital.com.br/bloggersmag/android/shelf.json -->
     <!-- App Configuration -->
     <!--^app_id--><string name="app_id">br.com.bloggersmag</string><!--$app_id-->
     <!--^app_name--><string name="app_name">Bloggers Mag</string><!--$app_name-->
@@ -105,9 +105,11 @@
     </string-array>
 
     <!-- Plugin configuration -->
-    <!--^parse_application_id--><string name="parse_application_id"></string><!--$parse_application_id-->
-    <!--^parse_client_key--><string name="parse_client_key"></string><!--$parse_client_key-->
-    <!--^google_analytics_tracking_id--><string name="google_analytics_tracking_id"></string><!--$google_analytics_tracking_id-->
+    <!--^parse_application_id--><string name="parse_application_id">kher5p9dsqGcAjPH6l3s1W23RtKOdwJO1SRKABco</string><!--$parse_application_id-->
+    <!--^parse_client_key--><string name="parse_client_key">9bHzrUwsH4fF8ynn59F0N86vPLTGrgMbr25SG6ti</string><!--$parse_client_key-->
+    <!--^google_analytics_tracking_id--><string name="google_analytics_tracking_id">UA-69745907-1</string><!--$google_analytics_tracking_id-->
+    <!--^admag_publication_id--><string name="admag_publication_id">498</string><!--admag_publication_id-->
+    <!--^admag_api_key--><string name="admag_api_key">6451eb3cd1674bfc9eed596da652a26dc938f6db</string><!--admag_api_key-->
 
     <!-- Standalone Mode -->
     <string name="sa_books_directory">books</string>
