@@ -2,9 +2,9 @@
 <resources>
 
     <!-- App Configuration -->
-    <!--^app_id--><string name="app_id">com.magloft.demo</string><!--$app_id-->
-    <!--^app_name--><string name="app_name">com.magloft.demo</string><!--$app_name-->
-    <string name="newstand_manifest_url">http://solucaorevistadigital.com.br/bloggersmag/android/shelf.json</string>
+    <!--^app_id--><string name="app_id">br.com.bloggersmag</string><!--$app_id-->
+    <!--^app_name--><string name="app_name">Bloggers Mag</string><!--$app_name-->
+    <string name="newstand_manifest_url">http://www.magloft.com/manifest/:app_id/:user_id</string>
     <string name="purchase_confirmation_url">http://www.magloft.com/api/app/v1/android/verify/:purchase_type/:app_id/:user_id</string>
     <string name="purchases_url">http://www.magloft.com/api/app/v1/android/purchases/:app_id/:user_id</string>
 
@@ -13,33 +13,33 @@
     <!--^google_play_subscription_ids--><string-array name="google_play_subscription_ids"></string-array><!--$google_play_subscription_ids-->
 
     <!-- UI Messages, Labels and Texts -->
-    <string name="msg_exit">Exit</string>
-    <string name="msg_closing_app">If you exit now, all downloads will be cancelled, are you sure you want to exit ?</string>
+    <string name="msg_exit">Sair</string>
+    <string name="msg_closing_app">Se você sair agora, todas as transferências serão canceladas , você tem certeza de que deseja sair ?</string>
     <string name="msg_issue_downloading">Download</string>
     <string name="msg_issue_extracting">Extract</string>
-    <string name="msg_issue_deleting">Deleting</string>
+    <string name="msg_issue_deleting">Deletando</string>
     <string name="msg_thumb_description">Thumbnail</string>
-    <string name="msg_confirmation">Confirmation</string>
-    <string name="msg_confirmation_delete_text">Are you sure you want to archive this issue?</string>
-    <string name="msg_purchase_complete">Thank you for purchasing this issue!</string>
-    <string name="msg_standalone_no_issues">No issues found.</string>
-    <string name="msg_no_connection_message">Looks like you don\'t have a working internet connection. Do you want to open your network settings?</string>
-    <string name="msg_no_connection_title">No internet connection</string>
-    <string name="msg_yes">Yes</string>
-    <string name="msg_no">No</string>
+    <string name="msg_confirmation">Confirmação</string>
+    <string name="msg_confirmation_delete_text">Tem certeza de que deseja arquivar esta edição?</string>
+    <string name="msg_purchase_complete">Obrigado por comprar nossa edição!</string>
+    <string name="msg_standalone_no_issues">Nenhuma edição encontrada.</string>
+    <string name="msg_no_connection_message">> Parece que você não tem uma conexão com a internet . Você quer abrir suas configurações de rede?</string>
+    <string name="msg_no_connection_title">Sem internet</string>
+    <string name="msg_yes">Sim</string>
+    <string name="msg_no">Não</string>
 
     <!-- Button Labels -->
-    <string name="lbl_action_settings">Settings</string>
+    <string name="lbl_action_settings">Configurações</string>
     <string name="lbl_action_info">Info</string>
-    <string name="lbl_action_refresh">Refresh</string>
-    <string name="lbl_action_subscribe">Subscribe</string>
+    <string name="lbl_action_refresh">Atualizar</string>
+    <string name="lbl_action_subscribe">Assinar</string>
     <string name="lbl_issue_download">Download</string>
-    <string name="lbl_issue_read">Read</string>
-    <string name="lbl_issue_archive">Archive</string>
-    <string name="lbl_issue_buy">Buy</string>
-    <string name="lbl_back">Back</string>
-    <string name="lbl_next">Next</string>
-    <string name="lbl_finish">Finish</string>
+    <string name="lbl_issue_read">Ler</string>
+    <string name="lbl_issue_archive">Arquivar</string>
+    <string name="lbl_issue_buy">Comprar</string>
+    <string name="lbl_back">Voltar</string>
+    <string name="lbl_next">Próximo</string>
+    <string name="lbl_finish">Concluir</string>
 
     <!-- Referrer strings to use with links to open them in the device's internet browser or in the same view from baker. For more information about links: https://github.com/bakerframework/baker/wiki/Managing-links-and-urls -->
     <string name="url_baker_referrer">baker</string>
@@ -65,13 +65,13 @@
     <string name="format_output_date">dd MMM yyyy</string>
 
     <!-- Preferences -->
-    <string name="pref_notifications_title">Notifications</string>
-    <string name="pref_receive_notifications">Enable notifications</string>
-    <string name="pref_receive_notifications_summary">Enable to receive content and messages from the cloud</string>
-    <string name="pref_receive_notifications_download">Enable automatic downloads</string>
-    <string name="pref_receive_notifications_download_summary">Automatically download new content when available</string>
-    <string name="pref_receive_notifications_download_only_wifi">Only Wi-Fi</string>
-    <string name="pref_receive_notifications_download_only_wifi_summary">Download the new content only when a Wi-Fi network is available</string>
+    <string name="pref_notifications_title">Notificações</string>
+    <string name="pref_receive_notifications">Ativar notificação</string>
+    <string name="pref_receive_notifications_summary">Ative para receber conteúdo e mensagens a partir da nuvem</string>
+    <string name="pref_receive_notifications_download">Ativar downloads automáticos</string>
+    <string name="pref_receive_notifications_download_summary">Baixar automaticamente novos conteúdos quando disponível</string>
+    <string name="pref_receive_notifications_download_only_wifi">Somente Wi-Fi</string>
+    <string name="pref_receive_notifications_download_only_wifi_summary">Faça o download do novo conteúdo somente quando uma rede Wi-Fi estiver disponível</string>
     <string name="pref_google_analytics_title">Google Analytics</string>
     <string name="pref_enable_analytics">Enable Google Analytics</string>
     <string name="pref_enable_analytics_summary">Send usage data to Google Analytics</string>
@@ -88,15 +88,15 @@
     </string-array>
 
     <!-- Error messages -->
-    <string name="err_download_task_connect">Could not connect to the internet</string>
-    <string name="err_download_task_malformed_url">Invalid server url</string>
-    <string name="err_download_task_file_not_found">The file was not found</string>
-    <string name="err_download_task_io">Could not download file</string>
-    <string name="err_download_task_cancelled">Download cancelled</string>
-    <string name="err_purchase_not_possible">Unable to complete checkout</string>
-    <string name="err_application_license_invalid">Licensing is not possible in non-productive apps. Please disable enable_licence_check until publishing the app.</string>
-    <string name="err_application_license_problem">It seems this app was not installed in a proper way. Please install this app only by using Google Play Store.</string>
-    <string name="err_application_no_internet">You need internet connection the first time you start this application.</string>
+    <string name="err_download_task_connect">Não foi possível conectar-se à internet</string>
+    <string name="err_download_task_malformed_url">Servidor inválido</string>
+    <string name="err_download_task_file_not_found">O arquivo não foi encontrado</string>
+    <string name="err_download_task_io">Não foi possível baixar arquivo</string>
+    <string name="err_download_task_cancelled">Download cancelado</string>
+    <string name="err_purchase_not_possible">Não é possível concluir check-out</string>
+    <string name="err_application_license_invalid">Licenciamento não é possível em aplicativos não produtivos. Desative enable_licence_check até publicar o app.</string>
+    <string name="err_application_license_problem">Parece que este aplicativo não foi instalado de forma adequada. Por favor, instalar este aplicativo só por meio do Google Play Store.</string>
+    <string name="err_application_no_internet">Você precisa de conexão com a internet a primeira vez que você iniciar este aplicativo.</string>
 
     <!-- Plugins -->
     <string-array name="baker_plugins">
