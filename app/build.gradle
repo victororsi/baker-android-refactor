@@ -19,10 +19,16 @@ android {
 
     defaultConfig {
         applicationId project.property("application-id")
+
+        manifestPlaceholders = [onesignal_app_id: "666f65b6-45b7-431b-a468-a4c5e392c18f",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "724507703095"]
+
+
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 10
-        versionName "1.0"
+        versionCode 12
+        versionName "1.1"
     }
 
     buildTypes {
@@ -71,4 +77,16 @@ dependencies {
     compile 'com.parse.bolts:bolts-android:1.+'
     compile 'org.xwalk:xwalk_core_library:11.40.277.7'
     compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+
+
+    compile 'com.onesignal:OneSignal:3.+@aar'
+
+    // Required for OneSignal, even if you have added FCM.
+  //  compile 'com.google.android.gms:play-services-gcm:+'
+
+    // Required for geotagging
+ //   compile "com.google.android.gms:play-services-location:+"
+
+    // play-services-analytics is only needed when using 8.1.0 or older.
+    // compile 'com.google.android.gms:play-services-analytics:+'
 }
