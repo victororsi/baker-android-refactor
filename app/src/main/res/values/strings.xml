@@ -4,7 +4,7 @@
     <!-- App Configuration -->
     <!--^app_id--><string name="app_id">br.com.bloggersmag</string><!--$app_id-->
     <!--^app_name--><string name="app_name">Bloggers Mag</string><!--$app_name-->
-    <string name="newstand_manifest_url">http://www.magloft.com/manifest/:app_id/:user_id</string>
+    <string name="newstand_manifest_url">http://solucaorevistadigital.com.br/bloggersmag/android/shelf.json</string>
     <string name="purchase_confirmation_url">http://www.magloft.com/api/app/v1/android/verify/:purchase_type/:app_id/:user_id</string>
     <string name="purchases_url">http://www.magloft.com/api/app/v1/android/purchases/:app_id/:user_id</string>
 
